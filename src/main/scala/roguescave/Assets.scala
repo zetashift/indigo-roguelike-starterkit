@@ -1,10 +1,10 @@
-package zetashift.roguescave
+package roguescave
 
 import indigo._
 
 object Assets:
 
-  val tileMap = AssetName("Anikki_square_10x10")
+  val tileMap = AssetName("sm_16x16")
 
   val assets: Set[AssetType] =
     Required.assets ++ Set(

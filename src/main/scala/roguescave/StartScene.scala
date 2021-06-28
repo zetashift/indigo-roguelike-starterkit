@@ -44,7 +44,7 @@ object StartScene extends Scene[Unit, Unit, Unit]:
   def message: String =
     """
     |╔═════════════════════╗
-    |║ Hit Space to Start Now!! ║
+    |║ Hit Space to Start! ║
     |╚═════════════════════╝
     |""".stripMargin
 

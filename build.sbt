@@ -3,7 +3,7 @@ import scala.language.postfixOps
 
 Global / onChangedBuildSource := ReloadOnSourceChanges
 
-lazy val roguelike =
+lazy val roguescave =
   (project in file("."))
     .enablePlugins(ScalaJSPlugin, SbtIndigo)
     .settings(
@@ -26,7 +26,7 @@ lazy val roguelike =
         "io.indigoengine" %%% "indigo"            % "0.8.2",
         "io.indigoengine" %%% "indigo-extras"     % "0.8.2"
       ),
-      scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.CommonJSModule) } // required for parcel, but will break indigoRun & indigoBuild
+      /* scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.CommonJSModule) } // required for parcel, but will break indigoRun & indigoBuild */
     )
     .settings(
       Compile / sourceGenerators += Def.task {
@@ -35,8 +35,8 @@ lazy val roguelike =
             "DfTiles", // Class/module name.
             "roguescave", // fully qualified package name
             (Compile / sourceManaged).value, // Managed sources (output) directory for the generated classes
-            10, // Character width
-            10 // Character height
+            16, // Character width
+            16  // Character height
           )
       }.taskValue
     )
