@@ -19,8 +19,8 @@ lazy val roguescave =
       showCursor := true,
       title := "A Roguelike in Indigo Adventure!",
       gameAssetsDirectory := "assets",
-      windowStartWidth := 550,
-      windowStartHeight := 400,
+      windowStartWidth := 80 * 10,
+      windowStartHeight := 50 * 10,
       libraryDependencies ++= Seq(
         "io.indigoengine" %%% "indigo-json-circe" % "0.8.2",
         "io.indigoengine" %%% "indigo"            % "0.8.2",

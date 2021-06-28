@@ -22,7 +22,7 @@ object RogueLikeGame extends IndigoGame[Unit, Unit, Unit, Unit]:
     Outcome(
       BootResult
         .noData(
-          GameConfig.default.withMagnification(2)
+          GameConfig.default.withMagnification(1)
         )
         .withFonts(DfTiles.Fonts.fontInfo)
         .withAssets(Assets.assets)
