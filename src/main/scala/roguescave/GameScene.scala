@@ -1,11 +1,11 @@
-package roguelike
+package roguescave
 
 import indigo._
 import indigo.scenes._
 
-import roguelike.terminal.{TerminalEntity, TerminalText}
-import roguelike.terminal.MapTile
-import roguelike.terminal.TerminalEmulator
+import roguescave.terminal.{TerminalEntity, TerminalText}
+import roguescave.terminal.MapTile
+import roguescave.terminal.TerminalEmulator
 
 object GameScene extends Scene[Unit, Unit, Unit]:
 

@@ -1,10 +1,10 @@
-package roguelike
+package roguescave
 
 import indigo._
 import indigo.scenes._
 import scala.scalajs.js.annotation.JSExportTopLevel
 
-import roguelike.terminal.{TerminalEntity, TerminalText}
+import roguescave.terminal.{TerminalEntity, TerminalText}
 
 @JSExportTopLevel("IndigoGame")
 object RogueLikeGame extends IndigoGame[Unit, Unit, Unit, Unit]:

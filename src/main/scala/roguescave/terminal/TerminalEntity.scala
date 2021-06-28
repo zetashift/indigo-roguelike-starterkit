@@ -1,9 +1,9 @@
-package roguelike.terminal
+package roguescave.terminal
 
 import indigo._
 import indigo.ShaderPrimitive._
 
-import roguelike.DfTiles
+import roguescave.DfTiles
 
 final case class TerminalEntity(
     tileSheet: AssetName,

@@ -1,11 +1,11 @@
-package roguelike.terminal
+package roguescave.terminal
 
 import indigo._
 import indigoextras.trees.QuadTree
 import indigoextras.trees.QuadTree.{QuadBranch, QuadEmpty, QuadLeaf}
 import indigoextras.geometry.Vertex
 
-import roguelike.DfTiles
+import roguescave.DfTiles
 import scala.annotation.tailrec
 
 final case class TerminalEmulator(screenSize: Size, charMap: QuadTree[MapTile]):

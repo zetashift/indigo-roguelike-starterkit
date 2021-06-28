@@ -1,4 +1,4 @@
-package roguelike.terminal
+package roguescave.terminal
 
 import indigo.shared.assets.AssetName
 import indigo.shared.materials.Material

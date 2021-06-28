@@ -1,4 +1,4 @@
-package roguelike
+package zetashift.roguescave
 
 import indigo._
 

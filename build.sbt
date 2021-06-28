@@ -7,17 +7,17 @@ lazy val roguelike =
   (project in file("."))
     .enablePlugins(ScalaJSPlugin, SbtIndigo)
     .settings(
-      name := "roguelike",
+      name := "roguescave",
       version := "0.0.1",
       scalaVersion := "3.0.0",
-      organization := "roguelike",
+      organization := "roguescave",
       libraryDependencies ++= Seq(
         "org.scalameta" %%% "munit" % "0.7.26" % Test
       ),
       testFrameworks += new TestFramework("munit.Framework"),
       Test / scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.CommonJSModule) },
       showCursor := true,
-      title := "Indigo Roguelike!",
+      title := "A Roguelike in Indigo Adventure!",
       gameAssetsDirectory := "assets",
       windowStartWidth := 550,
       windowStartHeight := 400,
@@ -25,15 +25,15 @@ lazy val roguelike =
         "io.indigoengine" %%% "indigo-json-circe" % "0.8.2",
         "io.indigoengine" %%% "indigo"            % "0.8.2",
         "io.indigoengine" %%% "indigo-extras"     % "0.8.2"
-      )
-      // scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.CommonJSModule) } // required for parcel, but will break indigoRun & indigoBuild
+      ),
+      scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.CommonJSModule) } // required for parcel, but will break indigoRun & indigoBuild
     )
     .settings(
       Compile / sourceGenerators += Def.task {
         TileCharGen
           .gen(
             "DfTiles", // Class/module name.
-            "roguelike", // fully qualified package name
+            "roguescave", // fully qualified package name
             (Compile / sourceManaged).value, // Managed sources (output) directory for the generated classes
             10, // Character width
             10 // Character height

@@ -1,9 +1,9 @@
-package roguelike
+package roguescave
 
 import indigo._
 import indigo.scenes._
 
-import roguelike.terminal.{TerminalEntity, TerminalText}
+import roguescave.terminal.{TerminalEntity, TerminalText}
 
 object StartScene extends Scene[Unit, Unit, Unit]:
 
@@ -44,7 +44,7 @@ object StartScene extends Scene[Unit, Unit, Unit]:
   def message: String =
     """
     |╔═════════════════════╗
-    |║ Hit Space to Start! ║
+    |║ Hit Space to Start Now!! ║
     |╚═════════════════════╝
     |""".stripMargin
 
