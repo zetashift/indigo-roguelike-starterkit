@@ -59,6 +59,6 @@ object GameScene extends Scene[Unit, Unit, Unit]:
   def present(context: FrameContext[Unit], model: Unit, viewModel: Unit): Outcome[SceneUpdateFragment] =
     Outcome(
       SceneUpdateFragment(
-        terminal.draw(Assets.tileMap, Size(10, 10), MapTile(DfTiles.Tile.SPACE))
+        terminal.draw(Assets.tileMap, Size(16, 16), MapTile(DfTiles.Tile.SPACE))
       )
     )
