@@ -19,14 +19,14 @@ lazy val roguescave =
       showCursor := true,
       title := "A Roguelike in Indigo Adventure!",
       gameAssetsDirectory := "assets",
-      windowStartWidth := 80 * 10,
-      windowStartHeight := 50 * 10,
+      windowStartWidth := 550,
+      windowStartHeight := 400,
       libraryDependencies ++= Seq(
-        "io.indigoengine" %%% "indigo-json-circe" % "0.8.2",
-        "io.indigoengine" %%% "indigo"            % "0.8.2",
-        "io.indigoengine" %%% "indigo-extras"     % "0.8.2"
-      ),
-      /* scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.CommonJSModule) } // required for parcel, but will break indigoRun & indigoBuild */
+        "io.indigoengine" %%% "indigo-json-circe" % "0.9.0",
+        "io.indigoengine" %%% "indigo"            % "0.9.0",
+        "io.indigoengine" %%% "indigo-extras"     % "0.9.0"
+      )
+      // scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.CommonJSModule) } // required for parcel, but will break indigoRun & indigoBuild
     )
     .settings(
       Compile / sourceGenerators += Def.task {
