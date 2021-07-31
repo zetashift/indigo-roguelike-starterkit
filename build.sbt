@@ -9,7 +9,7 @@ lazy val roguescave =
     .settings(
       name := "roguescave",
       version := "0.0.1",
-      scalaVersion := "3.0.0",
+      scalaVersion := "3.0.1",
       organization := "roguescave",
       libraryDependencies ++= Seq(
         "org.scalameta" %%% "munit" % "0.7.26" % Test
