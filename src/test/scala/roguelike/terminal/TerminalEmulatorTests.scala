@@ -1,11 +1,11 @@
-package roguelike.terminal
+package roguescave.terminal
 
 import indigo.RGB
 import indigo.RGBA
 import indigo.Point
 import indigo.Size
 
-import roguelike.DfTiles.Tile
+import roguescave.DfTiles.Tile
 
 class TerminalEmulatorTests extends munit.FunSuite {
 
